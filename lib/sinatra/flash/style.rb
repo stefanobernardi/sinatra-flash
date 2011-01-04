@@ -23,9 +23,15 @@ module Sinatra
         return "" if flash(key).empty?
         id = (key == :flash ? "flash" : "flash_#{key}")
         messages = flash(key).collect {|message| "  <div class='flash #{message[0]}'>#{message[1]}</div>\n"}
-        "<div id='#{id}'>\n" + messages.join + "</div>"
-      end
-      
+        '<div id="outer">
+        <div id="wrapper" >
+        <img id="icon" src="images/info.png" alt="icon" />
+        <div id="iconshadow" style="-webkit-mask-box-image: url("images/info.png") 0 stretch"></div>
+        <div id="textwrapper">
+        <div id="border"></div>' + messages.join + '</div>
+        </div>
+        </div>'
+      end      
     end
   end
 end

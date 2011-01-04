@@ -4,12 +4,12 @@ require 'rake'
 begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
-    gem.name = "sinatra-flash"
+    gem.name = "sinatra-flash-nicer"
     gem.summary = %Q{Proper flash messages in Sinatra}
     gem.description = %Q{A Sinatra extension for setting and showing Rails-like flash messages. This extension improves on the Rack::Flash gem by being simpler to use, providing a full range of hash operations (including iterating through various flash keys, testing the size of the hash, etc.), and offering a 'styled_flash' view helper to render the entire flash hash with sensible CSS classes. The downside is reduced flexibility -- these methods will *only* work in Sinatra.}
-    gem.email = "sfeley@gmail.com"
-    gem.homepage = "http://github.com/SFEley/sinatra-flash"
-    gem.authors = ["Stephen Eley"]
+    gem.email = "hello@stefanobernardi.com"
+    gem.homepage = "http://github.com/stefanobernardi/sinatra-flash"
+    gem.authors = ["Stefano Bernardi"]
     gem.add_dependency "sinatra", ">= 1.0.0"
     gem.add_development_dependency "rspec", ">= 1.2.9"
     gem.add_development_dependency "yard", ">= 0"

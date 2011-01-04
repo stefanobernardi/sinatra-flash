@@ -1,6 +1,6 @@
 Sinatra::Flash
 ==============
-This is an implementation of show-'em-once 'flash' messages for the [Sinatra][1] Web framework. It offers the following feature set:
+This is a fork of an implementation of show-'em-once 'flash' messages for the [Sinatra][1] Web framework. It offers the following feature set:
 
 * Simplicity (less than 50 significant lines of code)
 * Implements the documented [behavior][3] and [public API][4] of the Rails flash that many developers are used to
